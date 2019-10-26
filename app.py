@@ -1,28 +1,15 @@
 # coding=utf-8
 from flask import Flask, render_template, request, send_file
 from flask_qrcode import QRcode
-
+import home
 
 app = Flask(__name__)
 qrcode = QRcode(app)
 
-
 @app.route("/")
+@app.route('/home')
 def index():
-    paths = [
-        {
-            "titulo":"QR Code Simples",
-            "definicao":"Gerar um QRCode simples em formato png",
-            "link":"/qrcode?data=<data>",
-            "argumento":"Data: Informação do QR Code"
-        },
-        {
-            "titulo": "QR Code Logo",
-            "definicao": "Gerar um QRCode com um logo em formato png",
-            "link": "/qrcodeLogo?data=<data>&image=<image>",
-            "argumento": "Data: Informação do QR; Image: Imagem a sobrepôr no QRCode"
-        }
-    ]
+    paths = home.Home.home()
     return render_template("qrcode.html", paths=paths)
 
 
