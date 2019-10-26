@@ -3,7 +3,7 @@
 A simple Flask API to generate QRCodes.
 
 ## Setup
-First we need to geerate the virtual enviroment based on:
+First we need to generate the virtual environment based on:
 ```requirements.txt
 Flask-QRcode
 Flask
