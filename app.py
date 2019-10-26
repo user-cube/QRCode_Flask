@@ -13,8 +13,8 @@ def index():
         {
             "titulo":"QR Code Simples",
             "definicao":"Gerar um QRCode simples em formato png",
-            "link":"/qrcode",
-            "argumento":"None"
+            "link":"/qrcode?data=<data>",
+            "argumento":"Data: Informação do QR Code"
         },
         {
             "titulo": "QR Code Logo",
