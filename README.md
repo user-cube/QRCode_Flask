@@ -1,4 +1,4 @@
-# QRCode_Flask
+# QRCode - Flask API
 
 A simple Flask API to generate QRCodes.
 
