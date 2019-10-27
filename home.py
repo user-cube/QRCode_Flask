@@ -5,7 +5,7 @@ class Home():
                 "titulo": "Simple QR Code",
                 "definicao": "Generate a simple QRCode in png",
                 "link": "/qrcode",
-                "argumento": "Data: QR Code information"
+                "argumento": "None"
             },
             {
                 "titulo": "Logo QR Code",
