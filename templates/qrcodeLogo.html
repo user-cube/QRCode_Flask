@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple QR Code</title>
+    <title>Logo QR Code</title>
     <style type="text/css">
         .form-style-5 {
             max-width: 500px;
@@ -116,10 +116,13 @@
 <body>
 
 <div class="form-style-5">
-    <form action="/genqrcode" method="get" target="_blank">
+    <form action="/genqrcodeLogo" method="get" target="_blank">
         <fieldset>
             <legend><span class="number">1</span> QR Code Info</legend>
             <input type="text" name="data" placeholder="QR Code data" required>
+
+            <legend><span class="number">2</span> Logo to insert</legend>
+            <input type="text" name="image" placeholder="Link to logo" required>
         </fieldset>
         <input type="submit" value="Apply"/>
     </form>
