@@ -1,2 +1,4 @@
 Flask-QRcode
 Flask
+eventlet
+gunicorn
